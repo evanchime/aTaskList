@@ -4,8 +4,8 @@ var assert = require('assert');
 var MongoClient = require('mongodb').MongoClient;
 var ObjectId = require('mongodb').ObjectID;
 
-var username = 'evan';
-var password = 'onyem*interest5';
+var username = '******';
+var password = '********';
 
 var mongoDBConnectionString = 'mongodb://' + username + ':' + password + '@cluster0-shard-00-00-s80cm.mongodb.net:27017,' +
         'cluster0-shard-00-01-s80cm.mongodb.net:27017,' + 'cluster0-shard-00-02-s80cm.mongodb.net:27017/taskList?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin'
