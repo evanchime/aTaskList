@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `node server.js` for a dev server, and you will be navigated to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
+In the package.json, move @angular/cli, @angular/compiler-cli and typescript to devDependencies, for development, and move them back to dependencies, for production. Run `ng build && node server.js` for a dev server, and you will be navigated to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
