@@ -1,0 +1,28 @@
+<div class="container">
+    <h2 class="page-header"> Task List</h2>
+    <form (submit)="addTask($event)" class="well">
+      <div class="form-group">
+          <input type="text" [(ngModel)]="title" class="form-control" placeholder="Add Task" name="title">
+        </div>
+    </form>
+  </div>
+  
+  <div class="container">
+    <div class="task-list">
+      <div *ngFor="let task of tasks">
+          <div class="col-sm-1">
+              <input type="checkbox" [checked]="task.isDone" (click)="updateStatus(task)">
+          </div>
+          <div class="col-sm-7">
+              {{task.title}}
+          </div>
+          <div class="col-sm-4">
+              <input type="button" class="btn btn-danger" (click)="deleteTask(task._id)" value="Delete">
+            <br><br>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
